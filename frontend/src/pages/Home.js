@@ -15,7 +15,7 @@ function Home() {
   },[])
   const handleLogout = async () => {
     try {
-      const url = "http://localhost:8000/auth/logout";
+      const url = "https://deploy-mern-api-rouge.vercel.app/auth/logout";
       const token = localStorage.getItem('token');
       const headers = {
         'Authorization': token, // Send the token directly, without the 'Bearer' prefix
@@ -48,7 +48,7 @@ function Home() {
   
   const fetchProducts=async()=>{
     try{
-      const url="http://localhost:8000/products";
+      const url="https://deploy-mern-api-rouge.vercel.app/products";
       const token=localStorage.getItem('token');
       console.log('token');
       const headers={
